@@ -95,24 +95,3 @@ Tests : Jest
 Dockerisation : Docker Compose
 Database : PostgreSQL
 
-
-Reste a faire : 
-
-Check des inputs des users --> ok 
-Erreur handling --> ok
-Envoie email --> ok
-Test integration --> ok
-rendre la route post user propre  --> ok
-Voir si la route post peut creer que des users ou pas --> ok 
-un admin peut se supprimer lui meme pas cool --> ok 
-check le sub sur la modification des user (sub ou user) --> ok
-Reparer le password avec la route pour update + faire en sorte de bloquer les champs qu'on peut update. --> ok
-Ajouter un service pour les users/auth ? --> nop pas utile
-tests intergration ++ 
-
-
-Pour creer la base de test dans le container docker : 
-docker exec -it <nom_du_container_postgres> psql -U postgres
-CREATE DATABASE crud_test;
-\q
-
