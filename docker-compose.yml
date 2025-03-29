@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - '4000:4000'
+    depends_on:
+      - postgres
+      - mailhog
+
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: crud
+    ports:
+      - '5433:5432'
+    
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - '8025:8025'  # UI port (localhost:8025)
+      - '1025:1025'  # SMTP port 
+
