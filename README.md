@@ -80,18 +80,3 @@ src/
 ```bash
 pnpm test
 ```
-
-
-
-# crud-api
-API for users management with CRUD Operations, authentication and admin management
-
-
-Framework : Fastify
-Language : TypeScript
-Authenthication : JWT
-Documentation : Swagger
-Tests : Jest
-Dockerisation : Docker Compose
-Database : PostgreSQL
-
